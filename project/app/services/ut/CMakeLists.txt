@@ -1,10 +1,10 @@
 project(ServicesTests)
 
-find_package(GTest REQUIRED)
+find_package(gtest REQUIRED)
 
 include_directories(
-    ${GTEST_INCLUDE_DIRS}
-    ${GMOCK_INCLUDE_DIRS}
+    ${gtest_INCLUDE_DIRS}
+    ${gmock_INCLUDE_DIRS}
 )
 
 set(SOURCES
@@ -14,7 +14,7 @@ set(SOURCES
 add_executable(${PROJECT_NAME} ${SOURCES})
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
-    GTest::GTest
+    GTest::gtest
     GTest::Main
     gmock
     gmock_main

@@ -10,7 +10,7 @@
 #include <set>
 
 /* Example where SRP is violated.
- * This code modeles some smart device that takes care of home plants.
+ * This code models some smart device that takes care of home plants.
  * Here some other SOLID principles are also violated
  * but we will discuss those in other sections.
  */

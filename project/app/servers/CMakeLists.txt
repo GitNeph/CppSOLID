@@ -1,8 +1,8 @@
 project(Servers)
 
-find_package(Boost COMPONENTS system REQUIRED)
+find_package(boost COMPONENTS system REQUIRED)
 
-include_directories(${Boost_INCLUDE_DIRS})
+include_directories(${boost_INCLUDE_DIRS})
 
 set(HEADERS
     ${PROJECT_SOURCE_DIR}/interfaces/services/ITaxServiceFactory.hpp
@@ -20,7 +20,7 @@ add_library(${PROJECT_NAME} STATIC ${SOURCES} ${HEADERS})
 
 set(COMON_LINK_LIBS
     ${PROJECT_NAME}
-    ${Boost_SYSTEM_LIBRARY}
+    ${boost_SYSTEM_LIBRARY}
     Common
     Interfaces
     pthread

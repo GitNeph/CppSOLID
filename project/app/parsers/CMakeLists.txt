@@ -2,9 +2,9 @@ project(Parsers)
 
 add_subdirectory(ut)
 
-find_package(Boost REQUIRED)
+find_package(boost REQUIRED)
 
-include_directories(${Boost_INCLUDE_DIRS})
+include_directories(${boost_INCLUDE_DIRS})
 
 set(HEADERS
     ${PROJECT_SOURCE_DIR}/include/parsers/ParsersFactory.hpp

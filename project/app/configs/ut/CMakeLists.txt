@@ -1,8 +1,8 @@
 project(ConfigsTests)
 
-find_package(GTest REQUIRED)
+find_package(gtest REQUIRED)
 
-include_directories(${GTEST_INCLUDE_DIRS})
+include_directories(${gtest_INCLUDE_DIRS})
 
 set(SOURCES StartupConfig_tests.cpp)
 
